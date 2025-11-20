@@ -34,6 +34,12 @@ function App3(){
     const removeProduct = (id)=>{
         setPersonal(personal.filter(item => item.id !== id))
     }
+    const removeProject = (id) => {
+        setProject(project.filter(item=>item.id !== id))
+    }
+    const removeSkill = (id) => {
+        setSkill(skill.filter(item => item.id !== id));
+     };
 
     const ResumePDF = (
   <Document>
@@ -75,7 +81,14 @@ function App3(){
             <PersonalInfo onAdd={personalDetails}></PersonalInfo>
             <Project onAdd1={projects}></Project>
             <Skills onAdd2={skills}></Skills>
-            <ResumeGrid personal={personal} project={project} skill={skill} onRemove={removeProduct}></ResumeGrid>
+            <ResumeGrid 
+                personal={personal} 
+                project={project} 
+                skill={skill} 
+                onRemove={removeProduct} 
+                onRemove1={removeProject} 
+                onRemoveSkill={removeSkill} 
+            />
 
 
             <div className="mt-6">
