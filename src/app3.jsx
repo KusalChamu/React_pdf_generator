@@ -51,7 +51,7 @@ function App3() {
   <Document>
     <Page style={pdfStyles.page}>
 
-      {/* ---------------------- Personal Info ---------------------- */}
+      
       {personal.length > 0 && (
         <View style={pdfStyles.section}>
           <Text style={pdfStyles.title}>Personal Information</Text>
@@ -66,7 +66,7 @@ function App3() {
         </View>
       )}
 
-      {/* ---------------------- Projects ---------------------- */}
+      
       {project.length > 0 && (
         <View style={pdfStyles.section}>
           <Text style={pdfStyles.title}>Projects</Text>
@@ -89,7 +89,7 @@ function App3() {
         </View>
       )}
 
-      {/* ---------------------- Skills ---------------------- */}
+      
       {skill.length > 0 && (
         <View style={pdfStyles.section}>
           <Text style={pdfStyles.title}>Skills</Text>
