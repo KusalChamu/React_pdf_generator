@@ -26,7 +26,7 @@ export default function App4() {
     total: 0,
   });
 
-
+//User can only add company name,address, phone and email
     const handleChange = (e) => {
     const { name, value } = e.target;
     setInvoice((prev) => ({
