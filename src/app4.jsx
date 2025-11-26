@@ -4,7 +4,7 @@ import InvoiceTemplate from './components/invoice_template';
 
 export default function App4() {
   const invoice = {
-    logo: '/logo.PNG',
+    logo: 'https://i.ibb.co/TDfWKQGy/ad69c7dab3605449c7f6eb3f6d50692f.png',
     companyName: 'TechNova Solutions',
     companyAddress: '123 Business Street, Colombo, Sri Lanka',
     companyPhone: '+94 71 234 5678',
